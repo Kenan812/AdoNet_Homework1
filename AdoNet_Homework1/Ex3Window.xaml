@@ -1,0 +1,64 @@
+﻿<Window x:Class="AdoNet_Homework1.Ex3Window"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AdoNet_Homework1"
+        mc:Ignorable="d"
+        Title="Ex3Window" Height="470" Width="800" Background="#686868">
+    <Grid>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="1.5*"/>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel>
+
+            <Button  Name="ex3_1Button" Content="Show all from table" Height="60" Width="190" 
+                     HorizontalAlignment="Left" Margin="11,11,0,0" FontSize="17" 
+                     Background="#383838" Foreground="White" Click="ex3_1Button_Click"/>
+
+
+            <Button Name="ex3_2Button" Content="Show all names" Height="60" Width="190" 
+                     HorizontalAlignment="Left" Margin="11,11,0,0" FontSize="17" 
+                     Background="#383838" Foreground="White" Click="ex3_2Button_Click"/>
+
+
+            <Button Name="ex3_3Button" Content="Show all colors" Height="60" Width="190" 
+                     HorizontalAlignment="Left" Margin="11,11,0,0" FontSize="17" 
+                     Background="#383838" Foreground="White" Click="ex3_3Button_Click"/>
+
+
+            <Button Name="ex3_4Button" Content="Show max calority" Height="60" Width="190" 
+                     HorizontalAlignment="Left" Margin="11,11,0,0" FontSize="17" 
+                     Background="#383838" Foreground="White" Click="ex3_4Button_Click"/>
+
+            <Button Name="ex3_5Button" Content="Show min calority" Height="60" Width="190" 
+                     HorizontalAlignment="Left" Margin="11,11,0,0" FontSize="17" 
+                     Background="#383838" Foreground="White" Click="ex3_5Button_Click"/>
+
+            <Button Name="ex3_6Button" Content="Show average calority" Height="60" Width="190" 
+                     HorizontalAlignment="Left" Margin="11,11,0,0" FontSize="17" 
+                     Background="#383838" Foreground="White" Click="ex3_6Button_Click"/>
+
+
+
+        </StackPanel>
+
+
+        <DataGrid Grid.Column="1" Name="tableDataGrid"  Background="#686868" AutoGenerateColumns="True" 
+                  HeadersVisibility="All" Foreground="White" RowBackground="#686868" AlternatingRowBackground="#686868"                  >
+
+            <DataGrid.Resources>
+                <Style TargetType="DataGridColumnHeader">
+                    <Setter Property="Background" Value="#686868"/>
+                    <Setter Property="Foreground" Value="#B0B0B0"/>
+                </Style>
+            </DataGrid.Resources>
+            
+        </DataGrid>
+        
+        
+    </Grid>
+</Window>
